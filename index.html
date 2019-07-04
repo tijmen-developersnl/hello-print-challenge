@@ -65,27 +65,30 @@
     </div>
 
     <div id="player-one" class="game">
-      <form class="form">
-        <span class="form__title">Enter a number betweeen 0 and 100</span>
-        <input class="form__input" type="number" min="1" max="100"/>
-        <button class="form__submit" type="submit">Submit</button>
-      </form>
+      <span class="title">Enter a number betweeen 0 and 100</span>
+      <input class="input" type="number" min="1" max="100"/>
+      <button class="submit" onclick="guess('player-one')">Submit</button>
+
+      <span class="error" style="display: none">Please enter a number between the 1 and a 100.</span>
+      <span class="result"></span>
     </div>
 
     <div id="player-two" class="game">
-      <form class="form">
-        <span class="form__title">Enter a number betweeen 0 and 100</span>
-        <input class="form__input" type="number" min="1" max="100"/>
-        <button class="form__submit" type="submit">Submit</button>
-      </form>
+      <span class="title">Enter a number betweeen 0 and 100</span>
+      <input class="input" type="number" min="1" max="100"/>
+      <button class="submit" onclick="guess('player-two')">Submit</button>
+
+      <span class="error" style="display: none">Please enter a number between the 1 and a 100.</span>
+      <span class="result"></span>
     </div>
 
     <div id="player-three" class="game">
-      <form class="form">
-        <span class="form__title">Enter a number betweeen 0 and 100</span>
-        <input class="form__input" type="number" min="1" max="100"/>
-        <button class="form__submit" type="submit">Submit</button>
-      </form>
+      <span class="title">Enter a number betweeen 0 and 100</span>
+      <input class="input" type="number" min="1" max="100"/>
+      <button class="submit" onclick="guess('player-three')">Submit</button>
+
+      <span class="error" style="display: none">Please enter a number between the 1 and a 100.</span>
+      <span class="result"></span>
     </div>
   </div>
 </div>
