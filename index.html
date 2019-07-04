@@ -3,42 +3,87 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-
-  <link rel="stylesheet" href="styles/base/normalize.css">
-  <link rel="stylesheet" href="styles/styles.css">
-
+  <link rel="icon" type="image/vnd.microsoft.icon" href="assets/icons/favicon.ico"/>
   <title>Helloprint Challenge</title>
 
-  <link rel="icon" type="image/vnd.microsoft.icon" href="assets/icons/favicon.ico"/>
+  <link rel="stylesheet" href="styles/base/normalize.css">
+  <link rel="stylesheet" href="styles/base/styles.css">
+
+  <link rel="stylesheet" href="styles/page.css">
+  <link rel="stylesheet" href="styles/navbar.css">
+  <link rel="stylesheet" href="styles/game.css">
+  <link rel="stylesheet" href="styles/content.css">
+
+  <script type="text/javascript" src="index.js"></script>
 </head>
 <body>
-<div class="container">
-  <div class="container__header">
-    <img class="header" src="assets/banners/header_banner.png">
+<div class="grid-6 page">
+  <div class="navbar navbar--desktop">
+    <ul class="navbar__user">
+      <li class="name">John Doe</li>
+      <li class="email">john.doe@gaming.com</li>
+      <li class="link"><a href="pages/account.html">Edit account</a></li>
+    </ul>
+    <ul class="navbar__category">
+      <li class="title">INFO</li>
+      <li class="link"><a href="pages/ranking.html">Ranking</a></li>
+      <li class="link"><a href="pages/tournaments.html">Toernaments</a></li>
+      <li class="link link--active"><a href="index.html">Game</a></li>
+    </ul>
+    <ul class="navbar__category">
+      <li class="title">PERSONAL</li>
+      <li class="link"><a href="pages/settings.html">Settings</a></li>
+      <li class="link"><a href="pages/myscores.html">My scores</a></li>
+      <li class="link"><a href="pages/logout.html">Logout</a></li>
+    </ul>
+    <ul class="navbar__category">
+      <li class="title">NEED ANY HELP?</li>
+      <li class="link"><a href="pages/contact.html">Contact</a></li>
+    </ul>
   </div>
 
-  <div class="container__main">
+  <div class="navbar navbar--mobile">
+    <a class="item" href="pages/ranking.html">
+      <img class="icon" src="assets/icons/history-solid.svg" alt="icon_ranking">
+      Ranking
+    </a>
+    <a class="item" href="pages/tournaments.html">
+      <img class="icon" src="assets/icons/file-alt-regular.svg" alt="icon_tournaments">
+      Tournaments
+    </a>
+    <a class="item" href="pages/settings.html">
+      <img class="icon" src="assets/icons/user-circle-solid.svg" alt="icon_settings">
+      Settings
+    </a>
+  </div>
 
-    <div id="player-one" class="player">
-      <span class="title">Enter a number betweeen 0 and 100</span>
+  <div class="grid-3 content">
+    <div class="content__header">
+      <a href="https://www.helloprint.nl/vlaggen-bedrukken">
+        <img class="header" src="assets/banners/header_banner.png" alt="banner_flag_promotion">
+      </a>
+    </div>
+
+    <div id="player-one" class="game">
       <form class="form">
-        <input class="form__input" type="number" min="1" max="100" />
+        <span class="form__title">Enter a number betweeen 0 and 100</span>
+        <input class="form__input" type="number" min="1" max="100"/>
         <button class="form__submit" type="submit">Submit</button>
       </form>
     </div>
 
-    <div id="player-two" class="player">
-      <span class="title">Enter a number betweeen 0 and 100</span>
+    <div id="player-two" class="game">
       <form class="form">
-        <input class="form__input" type="number" min="1" max="100" />
+        <span class="form__title">Enter a number betweeen 0 and 100</span>
+        <input class="form__input" type="number" min="1" max="100"/>
         <button class="form__submit" type="submit">Submit</button>
       </form>
     </div>
 
-    <div id="player-three" class="player">
-      <span class="title">Enter a number betweeen 0 and 100</span>
+    <div id="player-three" class="game">
       <form class="form">
-        <input class="form__input" type="number" min="1" max="100" />
+        <span class="form__title">Enter a number betweeen 0 and 100</span>
+        <input class="form__input" type="number" min="1" max="100"/>
         <button class="form__submit" type="submit">Submit</button>
       </form>
     </div>
