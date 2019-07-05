@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, "Helvetica Neue", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #3E75D8;
+}
+
+a:hover {
+  border-bottom: 1px solid #3E75D8;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-row-gap: 2vh;
+  grid-column-gap: 2vw;
+}
+
+.grid-6 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  grid-row-gap: 1vh;
+  grid-column-gap: 1vw;
+}
+
+.error {
+  color: red;
+}
+
+@media (max-width: 599px) {
+  body {
+    background-color: #F8F9F8;
+  }
+}
+
+@media (min-width: 600px) {
+  body {
+    background-color: #F8F9F8;
+  }
+}
+
+@media (min-width: 900px) {
+  body {
+    background-color: #FFFFFF;
+  }
+}

@@ -1,0 +1,39 @@
+.content {
+  grid-area: content;
+}
+
+.content__header {
+  grid-area: banner;
+
+  max-height: 200px;
+  overflow: hidden;
+}
+
+.content__header img.header {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+@media (max-width: 599px) {
+  .content {
+    grid-template-areas: "banner banner banner" "player-one player-one player-one" "player-two player-two player-two" "player-three player-three player-three";
+  }
+}
+
+@media (min-width: 600px) {
+  .content {
+    grid-template-areas: "banner banner banner" "player-one player-one player-one" "player-two player-two player-two" "player-three player-three player-three";
+  }
+}
+
+@media (min-width: 900px) {
+  .content {
+    border: 2px solid #D4D4D4;
+    border-radius: 4px;
+    grid-template-areas: "banner banner banner" "player-one player-two player-three ";
+    margin-right: 60px;
+    padding: 40px;
+  }
+}

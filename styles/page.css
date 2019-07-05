@@ -1,0 +1,27 @@
+.page {
+  background-color: #FFFFFF;
+}
+
+@media (max-width: 599px) {
+  .page {
+    grid-template-areas: "content content content content content content" "navbar navbar navbar navbar navbar navbar";
+    margin: 20px 40px;
+    border: 1px solid #D5D4D7;
+  }
+}
+
+@media (min-width: 600px) {
+  .page {
+    grid-template-areas: "content content content content content content" "navbar navbar navbar navbar navbar navbar";
+    margin: 20px 40px;
+    border: 1px solid #D5D4D7;
+  }
+}
+
+@media (min-width: 900px) {
+  .page {
+    grid-template-areas: "navbar content content content content content";
+    margin-top: 80px;
+    border: none;
+  }
+}
