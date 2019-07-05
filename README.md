@@ -24,3 +24,26 @@
   * {"player": 1, "guess": "Bingo!!!"}
 * When one of the players gets the "Bingo!!!" message, all the buttons must be disabled. 
 * No javascript libraries or frameworks are allowed.  
+
+
+## Deviations from the assignment
+I managed to almost complete the assignment as described above. 
+The one mayor deviation is that I could not get the API to work due to it always returning a CORS error. 
+The solution for this is to change the server settings to allow cross domain requests, but sadly I can't change these settings.
+
+To make the game work without the API I wrote some code that mocks the generation and checking that the API does. 
+This code can be replaced when the server settings are changed.
+
+## Styles
+### Media query
+The next five media queries are used for the responsive layout.
+
+`@media (max-width: 599px) {}`
+
+`@media (min-width: 600px) {}`
+
+`@media (min-width: 900px) {}`
+
+`@media (min-width: 1200px) {}`
+
+`@media (min-width: 1800px) {}`

@@ -2,14 +2,14 @@
   grid-area: content;
 }
 
-.content .content__header {
+.content__header {
   grid-area: banner;
 
   max-height: 200px;
   overflow: hidden;
 }
 
-.content .content__header img.header {
+.content__header img.header {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -36,10 +36,4 @@
     margin-right: 60px;
     padding: 40px;
   }
-}
-
-@media (min-width: 1200px) {
-}
-
-@media (min-width: 1800px) {
 }

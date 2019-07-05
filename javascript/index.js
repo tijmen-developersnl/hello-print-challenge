@@ -32,7 +32,10 @@ function guess(player) {
 }
 
 function isValid(guess) {
-  return !(!Number.isInteger(guess) || guess <= 0 || guess > 100);
+  const min = 1;
+  const max = 100;
+
+  return Number.isInteger(guess) || guess >= min || guess <= max;
 }
 
 function endGame() {
@@ -43,20 +46,3 @@ function endGame() {
     }
   );
 }
-
-// HTTP GET Code
-// function checkGuess(player, guess) {
-//   const url = 'https://www.drukzo.nl.joao.hlop.nl/challenge.php?player=' + player + '&guess=' + guess;
-//   let xhr = new XMLHttpRequest();
-//
-//   xhr.onreadystatechange = function () {
-//     if (xhr.readyState == 4 && xhr.status == 200) {
-//       console.log(xhr.responseText);
-//     }
-//   };
-//
-//   xhr.open("GET", url, true);
-//   xhr.withCredentials = true;
-//   xhr.setRequestHeader("Content-Type", "application/json");
-//   xhr.send(null);
-// }

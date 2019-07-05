@@ -21,14 +21,14 @@
   justify-content: center;
 }
 
-.game .title {
+.game__title {
   color: #9A9A9A;
   margin-bottom: 10px;
   max-width: 150px;
   text-align: center;
 }
 
-.game .input {
+.game__input {
   border: 1px solid #D4D4D4;
   border-radius: 4px;
   margin-bottom: 10px;
@@ -37,7 +37,7 @@
   height: 30px;
 }
 
-.game .submit {
+.game__submit {
   background-color: #6DA537;
   border-color: #4D7028;
   border-radius: 4px;
@@ -47,6 +47,6 @@
   padding: 8px 15px;
 }
 
-.game .submit:disabled {
+.game__submit:disabled {
   background-color: #9A9A9A;
 }

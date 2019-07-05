@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="styles/game.css">
   <link rel="stylesheet" href="styles/content.css">
 
-  <script type="text/javascript" src="index.js"></script>
+  <script type="text/javascript" src="javascript/index.js"></script>
 </head>
 <body>
 <div class="grid-6 page">
@@ -43,16 +43,16 @@
   </div>
 
   <div class="navbar navbar--mobile">
-    <a class="item" href="pages/ranking.html">
-      <img class="icon" src="assets/icons/history-solid.svg" alt="icon_ranking">
+    <a class="button" href="pages/ranking.html">
+      <img class="button__icon" src="assets/icons/history-solid.svg" alt="icon_ranking">
       Ranking
     </a>
-    <a class="item" href="pages/tournaments.html">
-      <img class="icon" src="assets/icons/file-alt-regular.svg" alt="icon_tournaments">
+    <a class="button" href="pages/tournaments.html">
+      <img class="button__icon" src="assets/icons/file-alt-regular.svg" alt="icon_tournaments">
       Tournaments
     </a>
-    <a class="item" href="pages/settings.html">
-      <img class="icon" src="assets/icons/user-circle-solid.svg" alt="icon_settings">
+    <a class="button" href="pages/settings.html">
+      <img class="button__icon" src="assets/icons/user-circle-solid.svg" alt="icon_settings">
       Settings
     </a>
   </div>
@@ -64,31 +64,31 @@
       </a>
     </div>
 
-    <div id="player-one" class="game">
-      <span class="title">Enter a number betweeen 0 and 100</span>
-      <input class="input" type="number" min="1" max="100"/>
-      <button class="submit" onclick="guess('player-one')">Submit</button>
+    <div class="game" id="player-one">
+      <span class="game__title">Enter a number betweeen 0 and 100</span>
+      <input class="game__input" type="number" min="1" max="100"/>
+      <button class="game__submit" onclick="guess('player-one')">Submit</button>
 
-      <span class="error" style="display: none">Please enter a number between the 1 and a 100.</span>
-      <span class="result"></span>
+      <span class="game__error" style="display: none">Please enter a number between the 1 and a 100.</span>
+      <span class="game__result"></span>
     </div>
 
-    <div id="player-two" class="game">
-      <span class="title">Enter a number betweeen 0 and 100</span>
-      <input class="input" type="number" min="1" max="100"/>
-      <button class="submit" onclick="guess('player-two')">Submit</button>
+    <div class="game" id="player-two">
+      <span class="game__title">Enter a number betweeen 0 and 100</span>
+      <input class="game__input" type="number" min="1" max="100"/>
+      <button class="game__submit" onclick="guess('player-two')">Submit</button>
 
-      <span class="error" style="display: none">Please enter a number between the 1 and a 100.</span>
-      <span class="result"></span>
+      <span class="game__error" style="display: none">Please enter a number between the 1 and a 100.</span>
+      <span class="game__result"></span>
     </div>
 
-    <div id="player-three" class="game">
-      <span class="title">Enter a number betweeen 0 and 100</span>
-      <input class="input" type="number" min="1" max="100"/>
-      <button class="submit" onclick="guess('player-three')">Submit</button>
+    <div class="game" id="player-three">
+      <span class="game__title">Enter a number betweeen 0 and 100</span>
+      <input class="game__input" type="number" min="1" max="100"/>
+      <button class="game__submit" onclick="guess('player-three')">Submit</button>
 
-      <span class="error" style="display: none">Please enter a number between the 1 and a 100.</span>
-      <span class="result"></span>
+      <span class="game__error" style="display: none">Please enter a number between the 1 and a 100.</span>
+      <span class="game__result"></span>
     </div>
   </div>
 </div>

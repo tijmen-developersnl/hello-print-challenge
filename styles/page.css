@@ -7,7 +7,6 @@
     grid-template-areas: "content content content content content content" "navbar navbar navbar navbar navbar navbar";
     margin: 20px 40px;
     border: 1px solid #D5D4D7;
-
   }
 }
 
@@ -25,10 +24,4 @@
     margin-top: 80px;
     border: none;
   }
-}
-
-@media (min-width: 1200px) {
-}
-
-@media (min-width: 1800px) {
 }
