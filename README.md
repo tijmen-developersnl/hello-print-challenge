@@ -1,4 +1,5 @@
-# Helloprint Challenge
+# Helloprint Challenge (version 0.1.1)
+
 ## Challenge description
 ### Step 1
 
