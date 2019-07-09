@@ -50,3 +50,9 @@
 .game__submit:disabled {
   background-color: #9A9A9A;
 }
+
+.game__error,
+.game__result {
+  padding-top: 1em;
+  text-align: center;
+}
